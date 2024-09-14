@@ -1,0 +1,38 @@
+/* Adicionando o background para todos os elementos do body assim evitamos duplicacoes. Ou podemos utilizar a class bg-dark nos elementos com backgroud #000 */
+body {
+    color: #15ff00;
+    background-color: #000 !important;   
+}
+.navbar-nav .nav-link.active {
+    color: #15ff00; /* Nao ha a necessidade dessa linha */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garantir que fique no topo a todo tempo */
+}
+
+#cabecalho {
+    color: #15ff00; /* Nao ha a necessidade dessa linha */
+}
+
+/* Fundo transparente para .carousel-caption e todos os seus elementos filhos */
+.carousel-caption, .carousel-indicators, .carousel-caption * {
+    background-color: transparent;
+}
+
+
+#sobre {
+    color: #15ff00; /* Nao ha a necessidade dessa linha */
+}
+
+#contato {
+    color: #15ff00; /* Nao ha a necessidade dessa linha */
+}
+
+/* Adicionando margin top sem a necessidade de colocar a classe mt-x em todas as sections*/
+section {
+    margin-top:3rem;
+}
